@@ -30,9 +30,22 @@ Uma API RESTful desenvolvida com **FastAPI** e **PostgreSQL** para gerenciar mot
 
 ---
 
-## ⚙️ Pré-requisitos
+## Pré-requisitos
 
 - Docker 
 - Docker Compose 
 
 ---
+## Como Executar
+
+1.  **Clone o repositório**.
+2.  **Navegue até o diretório raiz** que contém o `docker-compose.yml`.
+3.  **Execute o comando:**
+    ```bash
+    docker-compose up --build -d
+    ```
+    O comando `--build` garante que as imagens Docker sejam construídas (necessário na primeira vez ou após alterações no código/Dockerfile). O `-d` executa os containers em segundo plano.
+
+4.  **Acesse os serviços:**
+    - **API:** A API estará rodando em `http://localhost:8000`.
+
